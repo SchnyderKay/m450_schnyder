@@ -1,17 +1,17 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using grundlagen;
+using NUnit;
 
-namespace M450.grundlagen
+namespace grundlagen.test
 {
-    [TestClass]
-    internal class PricingTest
+    public class Tests
     {
-        [TestMethod]
-        internal void TestPrice()
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+        [Test]
+        public void TestPrice()
         {
             Pricing pricing = new Pricing();
             Assert.IsNotNull(pricing);

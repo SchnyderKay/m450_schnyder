@@ -1,0 +1,36 @@
+﻿= Test-Levels
+
+== Aufgabe 1
+
+=== Component Testing
+
+Für das Component Testing verwendet meine Firma Unit-Tests und viele Code Reviews. Bei den Unit-Tests ist generell, die Regel, dass sie zuerst geschrieben werden sollten. Also wenn Möglich sollte der Test-Driven Weg genommen werden. Zudem müssen min 50% des Codes von Unit-Tests abgedekt sein.
+
+Für die Tests werden sehr oft Mocks verwednet. Das heisst wenn Möglich erstellt man für verwendete classes ein interface, für welches man dann in dem test project ein Mock dazu schreiben kann.
+
+=== Integration Testing
+
+Bei den Integration Tests bin ich nicht involviert.
+
+=== System Testing
+
+Beim System Testing werden bei meiner Firma TAS Tests, verwendet, die soweit alle funktionen des Codes abdeken und auch integrierte Stress-Tests haben. 
+
+Bei weiteren Tests bin ich nicht integriert.
+
+=== Acceptance Testing
+
+Bei den Acceptance Testing bin ich nicht involviert.
+
+
+== Aufgabe 2
+
+=== Testing approach
+
+
+
+=== Testing levels
+
+
+=== Testing types, techniques and tactics
+

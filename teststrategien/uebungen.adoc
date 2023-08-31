@@ -1,4 +1,4 @@
-﻿= Teststrategien
+= Teststrategien
 
 == Aufgabe 1
 
@@ -8,10 +8,10 @@
 |===
 |Kaufpreis | Rabatt
 
-|Kaufpreis < 15'000             
-|  0%
+| Kaufpreis < 15'000             
+| 0%
 
-|15'000 < Kaufpreis < 20'000    
+| 15'000 < Kaufpreis < 20'000    
 | 5%
 
 | 20'000 < Kaufpreis < 25'000   
@@ -89,7 +89,7 @@
 | 8
 | Autostandort ändern
 | Nach der Buchung hat man die Möglichkeit den abhohl standort zu ändern.
-| Der Abhohlstandort in der Buchung ist geändert.
+| Der Abhohlstandort in der Buchung ist ge�ndert.
 
 | 9
 | Mietung stornieren
@@ -108,7 +108,7 @@
 
 === Black Box
 
-Mögliche Ideen für für BlackBox testing währen:
+Mögliche Ideen für BlackBox testing wären:
 
 . Konto estellen 
 .. existierende Währung
@@ -122,7 +122,7 @@ Mögliche Ideen für für BlackBox testing währen:
 . Programm beenden 
 . Konto bearbeiten
 .. Einzahlung Tätigen
-... Gültiger Geldbeträg
+... Gültiger Geldbetrag
 ... Ungültiger Geldbetrag
 .. Geld überweisen
 ... Gültiger Geldbeträg
@@ -137,7 +137,7 @@ Mögliche Ideen für für BlackBox testing währen:
 
 === White Box
 
-Mögliche Ideen für für WhiteBox testing währen:
+Mögliche Ideen für WhiteBox testing wären:
 
 . Unit Tests schreiben
 .. Folgende Funktionen

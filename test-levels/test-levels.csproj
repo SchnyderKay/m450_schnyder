@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{83AA804C-5495-4509-9462-783374C72F0C}</ProjectGuid>
+    <ProjectGuid>{50CA957D-5CFA-469F-A6A2-114981A6A77F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>M450</RootNamespace>
-    <AssemblyName>M450</AssemblyName>
+    <RootNamespace>test_levels</RootNamespace>
+    <AssemblyName>test-levels</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,35 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="grundlagen\uebungen.adoc" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="MainClass.cs" />
-    <Compile Include="grundlagen\PricingTest.cs" />
-    <Compile Include="grundlagen\Pricing.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="auswertungen\" />
-    <Folder Include="automation-testing\" />
-    <Folder Include="ci-cd-pipeline\" />
-    <Folder Include="schnittstellen\" />
-    <Folder Include="test-driven-development\" />
-    <Folder Include="test-levels\" />
-    <Folder Include="test-umgebungen\" />
-    <Folder Include="unit-testing\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MSTest.TestFramework.3.1.1\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MSTest.TestFramework.3.1.1\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="teststrategien\uebungen.adoc" />
+    <None Include="uebungen.adoc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

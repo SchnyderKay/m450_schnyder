@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace M450.grundlagen
+namespace grundlagen
 {
     public class Pricing
     {
-        public Pricing()
+        static void Main(string[] args)
         {
         }
 
-        internal double calculatePrice(double baseprice, double specialprice, double extraprice, int extras, double discount)
+        public double calculatePrice(double baseprice, double specialprice, double extraprice, int extras, double discount)
         {
             double addon_discount;
             double result;
