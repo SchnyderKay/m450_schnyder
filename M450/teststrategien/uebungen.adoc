@@ -1,0 +1,151 @@
+﻿= Teststrategien
+
+== Aufgabe 1
+
+=== abtrakte Testfälle
+
+[cols="1,1"]
+|===
+|Kaufpreis | Rabatt
+
+|Kaufpreis < 15'000             
+|  0%
+
+|15'000 < Kaufpreis < 20'000    
+| 5%
+
+| 20'000 < Kaufpreis < 25'000   
+| 7%
+
+| Kaufpreis > 25'000            
+| 8.5%
+
+|===
+
+=== konkrete Testfälle
+
+[cols="1,1"]
+|===
+|Kaufpreis | Rabatt
+
+|12.500         
+| 0%
+
+|19'999.999     
+|  5%
+
+| 22'234        
+| 7%
+
+| 235'000       
+| 8.5%
+|===
+
+  
+== Aufgabe 2
+
+=== BlackBox Tests
+
+[cols="1,1,1,1"]
+
+|===
+| Nr | Beschreibung | Test | Erwartung
+
+| 1
+| Benutzer Registrierung
+| User erstellt neuen Account
+| Ein neues Profil wir erstellt
+
+| 2
+| Benutzer Login
+| Benutzer Logged sich mit dem zuvor erstellten Account ein
+| Login ist erfolgreich und nutzerdaten im Profil stimmen
+
+| 3
+| Auto finden
+| Anhand vom Autotypen und dem Standort ein Meitauto finden
+| Mietauto in der nähe wird gefunden
+
+| 4
+| Auto Mieten
+| Das zuvor gefundende Auto kann gemietet werded
+| Eine Mietbestätigung folgt
+
+| 5
+| Datum ändern
+| Die Buchung kann bearbeitet werden um das Abhohldatum und die Mietdauer zu ändern
+| Das Datum lässt sich ändern ohne die Buchung zu stornieren
+
+| 6
+| Vergangene Buchungen anschauen
+| Anhand von meinem Konto und evtl. einer Buchungsnummer kann ich vergangene Mietverträge und Buchungen anschauen
+| Man sieht eine Liste mit allen vergangenen Buchungen
+
+| 7
+| Mietwagentyp ändern
+| In der Buchung hat man die Möglichkeit einen Fahrzeugtypen zu ändern.
+| In der Buchun ist ein Anderes Fahrzeug aufgelistet
+
+| 8
+| Autostandort ändern
+| Nach der Buchung hat man die Möglichkeit den abhohl standort zu ändern.
+| Der Abhohlstandort in der Buchung ist geändert.
+
+| 9
+| Mietung stornieren
+| Die Buchung/ Mietvertrag kann man stornieren 
+| Die Buchung ist nicht mehr offen und Anzahlungen werden je nach Vertrag zurückgezahlt
+
+| 10
+| Benutzer/ Konto Löschen
+| Konto/ Nutzer Profil Löschen 
+| Das Konto ist nicht mehr zu finden und das Login funktioniert nicht mehr
+
+|===
+
+
+== Aufgabe 3
+
+=== Black Box
+
+Mögliche Ideen für für BlackBox testing währen:
+
+. Konto estellen 
+.. existierende Währung
+.. Fehlerhafte Währung
+. Währungskursabfragen
+.. Fehlerhafte Währung
+.. Existierende Währung
+. Alle Konten anzeigen
+.. Vor erstellung von Zusätzlichem Konto
+.. Nachdem zusätzliches Konto hinzugefügt wurde
+. Programm beenden 
+. Konto bearbeiten
+.. Einzahlung Tätigen
+... Gültiger Geldbeträg
+... Ungültiger Geldbetrag
+.. Geld überweisen
+... Gültiger Geldbeträg
+... Ungültiger Geldbetrag
+... Mehr Geld als auf Konto
+.. Geld Abheben
+... Gültiger Geldbeträg
+... Ungültiger Geldbetrag
+... Mehr Geld als auf Konto
+.. Kontostand abfragen 
+.. Konto Löschen
+
+=== White Box
+
+Mögliche Ideen für für WhiteBox testing währen:
+
+. Unit Tests schreiben
+.. Folgende Funktionen
+... getConfirmation
+... convertCurrency
+... getExchangeRate
+... createAccount
+... getAccount
+... getNumberOfAccounts
+... withdraw
+. Code Review
