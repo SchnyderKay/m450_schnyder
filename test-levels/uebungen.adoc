@@ -27,10 +27,19 @@ Bei den Acceptance Testing bin ich nicht involviert.
 
 === Testing approach
 
-
+Der Testing approach ist der Weg wie man ans testen herangeht. Dazu gehört zum Beipiel ob man die Tests im vornerein schreibt oder man die Tests erst schreibt sobald die Application fertig ist.
 
 === Testing levels
 
+Die verschiedenen Levels sind:
+
+- Unit-Testing
+- integration Testing
+- system testing
+- acceptance testing
 
 === Testing types, techniques and tactics
 
+Bei dem geht es darum, wie man tested. Beispiele dafür sind, dass ob man Black- oder WhiteBox Tests duchführt oder als Beispiel sich auf automated testing fokusiert. Welche Frameworks und Umgebungen man nutzt, wer die Tests durchführt und so weiter. 
+
+Das heisst dies fasst ein bisschen alles Andere zusammen und erstellt einen Plan um die Test durchzuführen, die alles umfassen.

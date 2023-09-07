@@ -1,0 +1,67 @@
+﻿= Unit Testing
+
+== Aufgabe 2 (NUnit)
+
+- Verschiedene Configurationen für Test und Applikation
+- Mehrere Assembliy
+[, xaml]
+----
+<NUnitProject>
+  <Settings activeconfig="Debug"/>
+  <Config name="Debug">
+    <assembly path="LibraryCore\bin\Debug\Library.dll"/>
+    <assembly path="LibraryUI\bin\Debug\LibraryUI.dll"/>
+  </Config>
+  <Config name="Release">
+    <assembly path="LibraryCore\bin\Release\Library.dll"/>
+    <assembly path="LibraryUI\bin\Release\LibraryUI.dll"/>
+  </Config>
+</NUnitProject>
+----
+
+- Attribute
+    1. Test 
+    2. TestFixture
+    3. Setup
+    4. Teardown
+    5. TestFixtureSetup
+    6. TestFixtureTeardown
+    7. ExpectedException
+    8. Expicit
+    9. Ignore
+    10. Category
+    11. Suite
+
+- Direkte (mehrfache) parameter übergabe
+[, c-sharp]
+----
+[Test]
+[TestCase(12, 0)]
+[TestCase(206622, 0)]
+[TestCase(9.999, 0)]
+public void TestDivideWithZero(double num1, double num2)
+{
+}
+----
+
+- verschiedene Assertions
+[, c-sharp]
+----
+Assert.AreEqual( int expected, int actual );
+
+Assert.IsTrue( bool condition );
+Assert.IsTrue( bool condition );
+
+Assert.Fail( string message );
+Assert.Ignore( string message );
+----
+- 
+
+
+From:
+https://docs.nunit.org/2.2/features.html[]
+
+
+== Aufgabe 3 
+
+Das Programm selbst hat keine Ausgabe. Die zusammenhänge sind im Klassendiagramm bereits aufgeschrieben. Allerdings fehlt auf dem Klassendiagramm die Main Klasse, welche eine neue Bank instanziert und darauf ein Sparaccount und eine Lohnaccount erstellt. 
