@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{88796230-40E3-480D-8616-B8E73060DC54}</ProjectGuid>
+    <ProjectGuid>{08F723A0-1877-40B6-997C-7D96A53B30FF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UnitTesting</RootNamespace>
-    <AssemblyName>UnitTesting</AssemblyName>
+    <RootNamespace>automation</RootNamespace>
+    <AssemblyName>automation</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,12 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Calculator.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="uebungen.adoc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

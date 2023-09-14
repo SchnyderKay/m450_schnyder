@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grundlagen", "grundlagen", "{D6BF0C1E-D976-4C15-A7C0-4C224798454B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit-testing", "unit-testing", "{5BA0732B-96A8-435D-9392-315D345D4629}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "teststrategien", "teststrategien", "{A4F99E4F-A74E-4CF6-8B79-15AF871878A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teststrategien", "teststrategien\teststrategien.csproj", "{9F1F2738-A35F-4640-A2B7-112A1FFBE44C}"
@@ -19,11 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-levels", "test-levels\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grundlagen", "grundlagen\grundlagen.csproj", "{1EC51BF3-0297-413E-9C25-60E0ED85375C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grundlagen.test", "grundlagen.test\grundlagen.test.csproj", "{65908B7F-FE38-4D72-AF3F-F1311F84841C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grundlagen.test", "grundlagen.test\grundlagen.test.csproj", "{65908B7F-FE38-4D72-AF3F-F1311F84841C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unti-tests", "unti-tests", "{F4998999-B30D-4012-8BD8-5C52CF6C38A4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unti-testing", "unti-testing", "{F4998999-B30D-4012-8BD8-5C52CF6C38A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting.Test", "UnitTesting.Test\UnitTesting.Test.csproj", "{4A23B939-7628-49A3-9892-1B44A9949042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTesting.Test", "UnitTesting.Test\UnitTesting.Test.csproj", "{4A23B939-7628-49A3-9892-1B44A9949042}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{88796230-40E3-480D-8616-B8E73060DC54}"
 EndProject
