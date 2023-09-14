@@ -47,3 +47,7 @@ pm.test("Number of students is 5", function () {
 ----
 
 == Aufgabe 4
+
+JMeter kann man nutzen, um viele Requests auf einmal auf eine URL zu schicken um Beispielsweise die Stabilität der Seite zu überprüfen. 
+
+image::screenshot.png[]
