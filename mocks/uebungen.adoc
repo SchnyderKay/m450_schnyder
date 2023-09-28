@@ -1,0 +1,79 @@
+= Schnittstellen
+
+== Mocked tests
+
+[source, Java]
+----
+package ch.bbw.addressbook;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.util.Assert;
+
+import java.security.Provider;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.Mockito.when;
+
+class AddressbookApplicationTests {
+
+	@Mock
+	AddressDAO addressDAO;
+
+	AddressService addressService;
+
+	@Mock
+	List<Address> addresses;
+
+	@BeforeEach
+	void Setup(){
+
+		Address address1 = new Address(1, "Peter", "Müller", "144");
+		Address address2 = new Address(1, "Max", "Muster", "117");
+		Address address3 = new Address(1, "Niels", "Paul", "1414");
+
+		addresses = new ArrayList<Address>();
+
+		addresses.add(address1);
+		addresses.add(address2);
+		addresses.add(address3);
+
+		addressDAO = Mockito.mock(AddressDAO.class);
+		Mockito.when(addressDAO.readAll()).thenReturn(addresses);
+
+		addressService= new AddressService(addressDAO);
+	}
+
+	@Test
+	void GetAddresses() {
+		when(addressDAO.readAll()).thenReturn(addresses);
+		var result = addressService.getAllAddresses();
+
+		assertEquals(result, addresses);
+	}
+
+	@Test
+	void isAvailable(){
+		when(addressDAO.isAvailable()).thenReturn(true);
+		var result = addressService.query("Test");
+
+		assertTrue(result);
+	}
+
+	@Test
+	void idString(){
+		when(addressDAO.getUniqueId()).thenReturn(17);
+		var result = addressService.toString();
+
+		assertEquals(result, "Using database with id: 17");
+	}
+
+
+}
+----
